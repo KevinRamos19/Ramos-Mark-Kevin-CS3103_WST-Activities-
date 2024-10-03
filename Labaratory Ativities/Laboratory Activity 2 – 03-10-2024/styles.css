@@ -19,7 +19,7 @@
   }
   
   header h1 {
-    font-size: 2.5rem; /* Increased font size for the title */
+    font-size: 2.5rem; 
     color: #0e0e0e;
   }
   
@@ -27,68 +27,68 @@
   .vision-board {
     background-color: #fff;
     border-radius: 30px;
-    padding: 40px; /* Increased padding for more space */
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
-    max-width: 800px; /* Increased max-width for a larger board */
+    padding: 40px; 
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2); 
+    max-width: 800px; 
     margin: auto;
     display: flex;
-    flex-direction: column; /* Use column direction to stack elements */
-    gap: 20px; /* Space between elements */
+    flex-direction: column; 
+    gap: 20px; 
   }
   
   /* Daily Reminder */
   .daily-reminder {
     background-color: #5f5f5f;
-    padding: 10px; /* Padding for better fit */
+    padding: 10px;
     border-radius: 8px;
   }
   
   .daily-reminder h2 {
     margin: 0;
-    font-size: 1.5rem; /* Slightly adjusted font size */
+    font-size: 1.5rem;
     color: #2e1dc7;
   }
   
   .daily-reminder p {
-    font-size: 1.1rem; /* Font size for text */
+    font-size: 1.1rem; 
     color: #efeded;
   }
   
   /* Image Gallery */
   .image-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    gap: 10px; /* Space between images */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
   }
   
   .image-gallery img {
-    width: 180px; /* Image width */
-    height: 180px; /* Image height */
+    width: 180px;
+    height: 180px; 
     object-fit: cover;
     border-radius: 10px;
   }
   
   /* Goals and Additional Images Section */
   .goals-and-images {
-    display: flex; /* Use flexbox to align goals and images side by side */
-    justify-content: space-between; /* Space between goals and images */
-    align-items: flex-start; /* Align items to the top */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
   }
   
   /* Goals */
   .goals-box {
     text-align: center;
-    font-size: 1.2rem; /* Increased font size for better readability */
-    background-color: #ffffff; /* White background for the box */
-    border: 2px solid #2106f2; /* Border color matching the heading */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Inner spacing for the content */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-size: 1.2rem; 
+    background-color: #ffffff;
+    border: 2px solid #2106f2; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   }
   
   .goals-box h3 {
     color: #201dc7;
-    font-size: 1.5rem; /* Increased font size for the goals heading */
+    font-size: 1.5rem; 
   }
   
   .goals-box ul {
@@ -97,57 +97,57 @@
   }
   
   .goals-box li {
-    margin: 2px 0; /* Increased margin for better spacing */
+    margin: 2px 0; 
     color: #6e1f4e;
   }
   
   /* Additional Images */
 .additional-images {
-    display: flex; /* Use flexbox to center the images */
-    justify-content: center; /* Center align images horizontally */
-    gap: 10px; /* Space between images */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   
   .additional-images img {
-    width: 180px; /* Image width */
-    height: 180px; /* Image height */
+    width: 180px; 
+    height: 180px; 
     object-fit: cover;
     border-radius: 10px;
   }
   
   /* Center the fifth image specifically */
   .additional-images img:nth-child(1) {
-    margin-right: auto; /* Push the first image to the left */
+    margin-right: auto; 
   }
   
   .additional-images img:nth-child(2) {
-    margin-left: auto; /* Push the second image to the right */
-    gap: 10px; /* Space between images */
+    margin-left: auto;
+    gap: 10px; 
   }
   
   
   /* Responsive design */
   @media (max-width: 768px) {
     .vision-board {
-      padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px; 
     }
   
     .image-gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
   
     .image-gallery img {
-      width: 80px; /* Adjusted image size for smaller screens */
-      height: 80px; /* Adjusted image size for smaller screens */
+      width: 80px; 
+      height: 80px; 
     }
   
     .additional-images img {
-      width: 80px; /* Adjusted image size for smaller screens */
-      height: 80px; /* Adjusted image size for smaller screens */
+      width: 80px; 
+      height: 80px; 
     }
   
     .goals-and-images {
-      flex-direction: column; /* Stack goals and images vertically on smaller screens */
+      flex-direction: column; 
     }
   }
 </style>
