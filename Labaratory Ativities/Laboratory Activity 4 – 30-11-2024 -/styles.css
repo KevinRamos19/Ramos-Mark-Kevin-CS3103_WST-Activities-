@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Ensures text is hidden as it's typed */
+  white-space: nowrap; /* Prevents wrapping */
+  border-right: 3px solid #ffeb3b; /* Cursor effect */
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite; /* Typing and cursor animations */
+}
+
+/* Typewriter Effect Animations */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no text */
+  }
+  to {
+    width: 100%; /* Reveal the entire text */
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent; /* Cursor disappears */
+  }
+  50% {
+    border-color: #ffeb3b; /* Cursor appears */
+  }
+}
+
+/* Vision Board Section */
+.vision-board {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Daily Reminder */
+.daily-reminder {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.daily-reminder h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.daily-reminder p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-style: italic;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Space between images */
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 100%; /* Ensures the images scale to fit the grid column */
+  height: 200px; /* Uniform height for all images */
+  object-fit: cover; /* Ensures the image fills the dimensions while cropping excess */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3); /* Glow on hover */
+}
+
+/* Goals Section */
+.goals-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.goals-box h3 {
+  font-size: 1.6rem;
+  color: #ffeb3b;
+}
+
+.goals-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-box li {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
+  }
+
+  .image-gallery img {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+}
